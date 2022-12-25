@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8683039543490982604}
   - component: {fileID: 6403939122291162072}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: BigEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,10 +120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02112f35376888b44a173e614e1122b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  rigidBody: {fileID: 0}
-  direction: {x: 0, y: 0}
+  hp: 5
+  damage: 0
+  speed: 1
   player: {fileID: 0}
+  rigidBody: {fileID: 0}
 --- !u!61 &6403939122291162072
 BoxCollider2D:
   m_ObjectHideFlags: 0

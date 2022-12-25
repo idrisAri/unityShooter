@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, GameObjectProperties
 {
+    public float hp;
+    public float damage;
     public float speed;
-    public Rigidbody2D rigidBody;
-    public Vector2 direction;
-    public GameObject player;
 
-    // Start is called before the first frame update
+    public GameObject player;
+    public Rigidbody2D rigidBody;
+
+
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        //rigidBody.velocity = direction * speed;
         player = GameObject.FindGameObjectWithTag("player");
     }
 
@@ -24,19 +25,35 @@ public class Enemy : MonoBehaviour
     }
 
 
-    public void setData(float s, Vector2 dir)
-    {
-        speed = s;
-        direction = new Vector2(dir.x, dir.y);
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("playerBullet"))
         {
-            //Debug.Log("got shot");
-            Destroy(gameObject);
+            float damage = collision.gameObject.GetComponent<GameObjectProperties>().getDamage();
+            deductHp(damage);
         }
+    }
+
+    public float getHp()
+    {
+        return hp;
+    }
+
+    public float getDamage()
+    {
+        return damage;
+    }
+
+    public float getSpeed()
+    {
+        return speed;
+    }
+
+    public void deductHp(float damage)
+    {
+        hp -= damage;
+        if (hp <= 0)
+            Destroy(gameObject);
+
     }
 }

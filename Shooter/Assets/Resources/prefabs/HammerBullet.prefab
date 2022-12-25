@@ -47,6 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 200
+  damage: 2
+  hp: 0
 --- !u!212 &464363316794611991
 SpriteRenderer:
   m_ObjectHideFlags: 0

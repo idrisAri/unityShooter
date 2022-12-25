@@ -1,0 +1,31 @@
+{
+	"waveList": [
+		{
+			"waveName" : "wave1",
+			"startTime" : 0,
+			"duration": 10,
+			"spawnPosition": "top",
+			"interval": 1,
+			"count": 3,
+			"enemy": "SmallEnemy"
+		},
+		{
+			"waveName" : "wave2",
+			"startTime" : 5,
+			"duration": 10,
+			"spawnPosition": "bottom",
+			"interval": 1,
+			"count": 5,
+			"enemy": "BigEnemy"
+		},
+		{
+			"waveName" : "wave3",
+			"startTime" : 11,
+			"duration": 10,
+			"spawnPosition": "bottom",
+			"interval": 1,
+			"count": 5,
+			"enemy": "BigEnemy"
+		}
+	]
+}
