@@ -128,13 +128,29 @@ public class WaveManager : MonoBehaviour
 
     void OnDrawGizmos()
     { 
-        debugLogVector = Camera.main.ScreenToWorldPoint(new Vector3(1F, Screen.height, 50));
-        Handles.Label(new Vector3(debugLogVector.x, debugLogVector.y - 0.5F, debugLogVector.z), (int)timePassed + "");
+        //debugLogVector = Camera.main.ScreenToWorldPoint(new Vector3(1F, Screen.height, 50));
+        //Handles.Label(new Vector3(debugLogVector.x, debugLogVector.y - 0.5F, debugLogVector.z), (int)timePassed + "");
+        //int i = 0;
+        //foreach(string s in activeWaves)
+        //{
+        //    Handles.Label(new Vector3(debugLogVector.x, debugLogVector.y - 1F - (i * 0.5f), debugLogVector.z), s);
+        //    i ++;
+        //}
+    }
+
+
+    private void OnGUI()
+    {
+        GUIStyle myStyle = new GUIStyle();
+        myStyle.fontSize = 50;
+        myStyle.normal.textColor = Color.red;
+
+        GUI.Label(new Rect(10, 30, 200, 50), (int)timePassed + "", myStyle);
         int i = 0;
-        foreach(string s in activeWaves)
+        foreach (string s in activeWaves)
         {
-            Handles.Label(new Vector3(debugLogVector.x, debugLogVector.y - 1F - (i * 0.5f), debugLogVector.z), s);
-            i ++;
+            GUI.Label(new Rect(10, 60 + (i * 60), 200, 50), s, myStyle);
+            i++;
         }
     }
 
