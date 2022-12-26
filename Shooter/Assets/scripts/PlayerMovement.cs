@@ -12,11 +12,15 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 direction;
     private float moveSpeed = 10f;
 
+    private float width;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        width = sr.bounds.size.x;
     }
 
     // Update is called once per frame
@@ -53,5 +57,9 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector2.zero;
         }
 
+        Vector3 camBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        float x = Mathf.Clamp(transform.position.x, -camBounds.x + (width * 0.5F),camBounds.x - (width * 0.5F));
+
+        transform.position = new Vector3(x, transform.position.y, transform.position.z);
     }
 }

@@ -21,11 +21,16 @@ public class Enemy : MonoBehaviour, GameObjectProperties
     public GameObject player;
     public Rigidbody2D rigidBody;
 
+    private float width;
+
 
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("player");
+
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        width = sr.bounds.size.x;
 
         shootTimeRemaining = shootInterval;
     }
@@ -54,6 +59,10 @@ public class Enemy : MonoBehaviour, GameObjectProperties
     void FixedUpdate()
     {
         rigidBody.velocity = (player.transform.position - transform.position).normalized * speed;
+
+        Vector3 camBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        float x = Mathf.Clamp(transform.position.x, -camBounds.x + (width * 0.5F), camBounds.x - (width * 0.5F));
+        transform.position = new Vector3(x, transform.position.y, transform.position.z);
     }
 
 
