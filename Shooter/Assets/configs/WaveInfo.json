@@ -5,7 +5,7 @@
 			"startTime" : 0,
 			"duration": 10,
 			"spawnPosition": "top",
-			"interval": 1,
+			"interval": 5,
 			"count": 3,
 			"enemy": "SmallEnemy"
 		},
@@ -14,7 +14,7 @@
 			"startTime" : 5,
 			"duration": 10,
 			"spawnPosition": "bottom",
-			"interval": 1,
+			"interval": 10,
 			"count": 5,
 			"enemy": "BigEnemy"
 		},
@@ -23,7 +23,7 @@
 			"startTime" : 11,
 			"duration": 10,
 			"spawnPosition": "bottom",
-			"interval": 1,
+			"interval": 20,
 			"count": 5,
 			"enemy": "BigEnemy"
 		}

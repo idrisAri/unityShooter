@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 408772096}
-  playerSpeed: 2
+  playerSpeed: 5
   rb: {fileID: 0}
 --- !u!114 &495236324
 MonoBehaviour:
@@ -844,6 +844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followObject: {fileID: 495236322}
+  changeInY: 0
 --- !u!1 &1021287312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,6 +1314,7 @@ MonoBehaviour:
   speed: 2
   bgRenderer: {fileID: 1751175017}
   player: {fileID: 495236323}
+  camera2: {fileID: 973165520}
 --- !u!23 &1751175017
 MeshRenderer:
   m_ObjectHideFlags: 0
