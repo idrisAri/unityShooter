@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02112f35376888b44a173e614e1122b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 5
+  hp: 1
   damage: 0
   speed: 1
   shootBulletOnInterval: 1
