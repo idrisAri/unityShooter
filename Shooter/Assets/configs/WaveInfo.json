@@ -1,31 +1,58 @@
 {
-	"waveList": [
-		{
-			"waveName" : "wave1",
-			"startTime" : 0,
-			"duration": 10,
-			"spawnPosition": "top",
-			"interval": 5,
-			"count": 3,
-			"enemy": "SmallEnemy"
-		},
-		{
-			"waveName" : "wave2",
-			"startTime" : 5,
-			"duration": 10,
-			"spawnPosition": "bottom",
-			"interval": 10,
-			"count": 5,
-			"enemy": "BigEnemy"
-		},
-		{
-			"waveName" : "wave3",
-			"startTime" : 11,
-			"duration": 10,
-			"spawnPosition": "bottom",
-			"interval": 20,
-			"count": 5,
-			"enemy": "BigEnemy"
-		}
-	]
+   "waveList" : [
+      {
+         "waveName" : "wave1",
+         "startTime" : 0,
+         "duration" : 10,
+         "spawnPosition" : "top",
+         "interval" : 3,
+         "count" : 3,
+         "enemy" : "SmallEnemy"
+      },
+      {
+         "waveName" : "wave2",
+         "startTime" : 11,
+         "duration" : 10,
+         "spawnPosition" : "\"bottom\"\n",
+         "interval" : 5,
+         "count" : 5,
+         "enemy" : "SmallEnemy"
+      },
+      {
+         "waveName" : "wave3",
+         "startTime" : 21,
+         "duration" : 10,
+         "spawnPosition" : "top",
+         "interval" : 5,
+         "count" : 7,
+         "enemy" : "\"BigEnemy\"\n"
+      },
+      {
+         "waveName" : "wave4",
+         "startTime" : 31,
+         "duration" : 10,
+         "spawnPosition" : "bottom",
+         "interval" : 7,
+         "count" : 10,
+         "enemy" : "SmallEnemy"
+      },
+      {
+         "waveName" : "wave5",
+         "startTime" : 35,
+         "duration" : 10,
+         "spawnPosition" : "top",
+         "interval" : 10,
+         "count" : 15,
+         "enemy" : "BigEnemy"
+      },
+      {
+         "waveName" : "wave5",
+         "startTime" : 40,
+         "duration" : 10,
+         "spawnPosition" : "bottom",
+         "interval" : 20,
+         "count" : 20,
+         "enemy" : "SmallEnemy"
+      }
+   ]
 }
