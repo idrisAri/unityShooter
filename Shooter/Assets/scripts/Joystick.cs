@@ -24,8 +24,8 @@ public class Joystick : MonoBehaviour
 
     public void PointerDown()
     {
-        //joyStick.transform.position = Input.mousePosition;
-        //joyStickBG.transform.position = Input.mousePosition;
+        joyStick.transform.position = Input.mousePosition;
+        joyStickBG.transform.position = Input.mousePosition;
         joystickTouchPosition = Input.mousePosition;
 
     }
@@ -41,11 +41,11 @@ public class Joystick : MonoBehaviour
 
         if(joystickDistance < joystickRadius)
         {
-            joyStick.transform.position = joystickOrignalPosition + joystickVec * joystickDistance;
+            joyStick.transform.position = joystickTouchPosition + joystickVec * joystickDistance;
         }
         else
         {
-            joyStick.transform.position = joystickOrignalPosition + joystickVec * joystickRadius;
+            joyStick.transform.position = joystickTouchPosition + joystickVec * joystickRadius;
         }
 
     }

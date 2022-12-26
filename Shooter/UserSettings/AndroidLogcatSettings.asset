@@ -3,87 +3,69 @@
     "m_SelectedPackage": {
         "deviceId": "dae4cc2c",
         "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 31137,
+        "processId": 26716,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "dae4cc2c",
-            "name": "com.miui.home",
-            "processId": 6253,
-            "exited": false
-        },
-        {
-            "deviceId": "dae4cc2c",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 11545,
-            "exited": false
-        },
-        {
-            "deviceId": "dae4cc2c",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 2830,
-            "exited": false
-        },
-        {
-            "deviceId": "dae4cc2c",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 14535,
-            "exited": false
-        },
-        {
-            "deviceId": "dae4cc2c",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 15023,
-            "exited": false
-        },
-        {
-            "deviceId": "dae4cc2c",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 17911,
-            "exited": false
-        },
-        {
-            "deviceId": "dae4cc2c",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 20229,
-            "exited": false
-        },
-        {
-            "deviceId": "dae4cc2c",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 24814,
-            "exited": false
-        },
-        {
-            "deviceId": "dae4cc2c",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 25474,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "dae4cc2c",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 26328,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "dae4cc2c",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 27419,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "dae4cc2c",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 30407,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "dae4cc2c",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 31137,
+            "exited": true
+        },
+        {
+            "deviceId": "dae4cc2c",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 18089,
+            "exited": false
+        },
+        {
+            "deviceId": "dae4cc2c",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 18960,
+            "exited": false
+        },
+        {
+            "deviceId": "dae4cc2c",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 20094,
+            "exited": false
+        },
+        {
+            "deviceId": "dae4cc2c",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 26108,
+            "exited": false
+        },
+        {
+            "deviceId": "dae4cc2c",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 26716,
             "exited": false
         }
     ],
@@ -137,7 +119,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "",
+    "m_Filter": "<IQ>",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }

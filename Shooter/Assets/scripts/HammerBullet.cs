@@ -23,12 +23,6 @@ public class HammerBullet : MonoBehaviour, GameObjectProperties
         transform.RotateAround(player.transform.position, new Vector3(0, 0, 1), rotateSpeed * Time.deltaTime);
     }
 
-    public static explicit operator HammerBullet(GameObject v)
-    {
-        throw new NotImplementedException();
-    }
-
-
 
     public float getHp()
     {

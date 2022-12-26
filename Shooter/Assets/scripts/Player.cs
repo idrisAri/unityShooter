@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, GameObjectProperties
 {
-    // Start is called before the first frame update
+    public float hp;
+    public float damage;
+    public float speed;
+
     void Start()
     {
         
@@ -16,6 +19,29 @@ public class Player : MonoBehaviour
         
     }
 
+
+    public void deductHp(float damage)
+    {
+        //Debug.Log("Hit By Bullet");
+        //hp -= damage;
+        //if (hp <= 0)
+        //    Destroy(gameObject);
+    }
+
+    public float getDamage()
+    {
+        return damage;
+    }
+
+    public float getHp()
+    {
+        return hp;
+    }
+
+    public float getSpeed()
+    {
+        return speed;
+    }
 
 
 }

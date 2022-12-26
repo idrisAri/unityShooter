@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,15 @@ public class Enemy : MonoBehaviour, GameObjectProperties
     public float hp;
     public float damage;
     public float speed;
+    public bool shootBulletOnInterval;
+    public float shootInterval;
+    public GameObject bullet;   
+
+
+
+    public float shootTimeRemaining;
+
+
 
     public GameObject player;
     public Rigidbody2D rigidBody;
@@ -16,6 +26,28 @@ public class Enemy : MonoBehaviour, GameObjectProperties
     {
         rigidBody = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("player");
+
+        shootTimeRemaining = shootInterval;
+    }
+
+
+    void Update()
+    {
+        if (shootBulletOnInterval)
+        {
+            shootTimeRemaining -= Time.deltaTime;
+            if (shootTimeRemaining <= 0)
+            {
+                shootBullet();
+                shootTimeRemaining = shootInterval;
+            }
+        }
+        
+    }
+
+    private void shootBullet()
+    {
+        Instantiate(bullet, transform);
     }
 
     // Update is called once per frame
